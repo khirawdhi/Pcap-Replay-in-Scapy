@@ -4,7 +4,7 @@
 
 #Perform TCP handshake between two host in a network
 
->>>ip = IP(src='192.168.163.133', dst='192.168.163.35')
+>>>ip = IP(src='192.168.163.133', dst='192.168.163.135')
 >>>SYN = TCP(sport=1024, dport=80, flags='S', seq=12345)
 >>>packet = ip/SYN
 >>>SYNACK = sr1(packet)
